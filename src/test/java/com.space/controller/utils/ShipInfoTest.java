@@ -58,6 +58,19 @@ public class ShipInfoTest {
         return Objects.hash(id, name, planet, shipType, prodDate, isUsed, speed, crewSize, rating);
     }
 
+//    @Override
+//    public String toString() {
+//        Calendar calendar = Calendar.getInstance();
+//        calendar.setTimeInMillis(prodDate);
+//        int prodYear = calendar.get(Calendar.YEAR);
+//        return "ShipInfoTest{" +
+//                "id=" + id +
+//                ", name='" + name + '\'' +
+//                ", prodYear=" + prodYear +
+//                '}';
+//    }
+
+
     @Override
     public String toString() {
         Calendar calendar = Calendar.getInstance();
@@ -66,7 +79,13 @@ public class ShipInfoTest {
         return "ShipInfoTest{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
-                ", prodYear=" + prodYear +
+                ", planet='" + planet + '\'' +
+                ", shipType=" + shipType +
+                ", prodDate=" + prodDate +
+                ", isUsed=" + isUsed +
+                ", speed=" + speed +
+                ", crewSize=" + crewSize +
+                ", rating=" + rating +
                 '}';
     }
 }

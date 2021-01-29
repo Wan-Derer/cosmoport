@@ -145,7 +145,7 @@ public class Ship {
 
     public Double getRating() {
         Double k = getUsed() ? 0.5 : 1.0;
-        rating = (80 * getSpeed() * k) / (CURRENT_YEAR - prodDate.getYear() + YEAR_SHIFT + 1.0);
+        rating = (80 * getSpeed() * k) / (CURRENT_YEAR - (prodDate.getYear() + YEAR_SHIFT) + 1.0);
         rating = Math.round(rating * 100) / 100.0;
         return rating * 100;
     }
